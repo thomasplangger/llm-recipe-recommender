@@ -1,0 +1,12 @@
+.gradient {
+  @screen md {
+    background: radial-gradient(300.32% 84.77% at 15.23% 50%,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0) 100%);
+  }
+
+  background: radial-gradient(300.32% 84.77% at 15.23% 50%,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%);
+
+}

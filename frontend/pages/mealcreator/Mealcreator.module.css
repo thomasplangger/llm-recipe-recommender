@@ -1,0 +1,71 @@
+.Input {
+  input,
+  div,
+  p {
+    @apply text-[1.4rem];
+  }
+}
+
+.Icon {
+  @apply w-20 h-20;
+  path {
+    @apply stroke-white;
+  }
+}
+
+.ModalDialog {
+  /* Position the modal container */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Modal {
+  /* Position the modal content */
+  position: relative;
+  width: 100%;
+  max-width: 60rem;
+  max-height: 80%; /* Adjust this value as needed */
+  overflow-y: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 2rem;
+}
+
+
+.Shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-image: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  background-repeat: no-repeat;
+
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../public/assets/fonts/Inter_weighted.ttf");
+  font-weight: 100 900; /* Weight range that your font supports */
+  font-style: oblique -10deg 10deg; /* Slant range that your font supports */
+  font-display: swap;
+}

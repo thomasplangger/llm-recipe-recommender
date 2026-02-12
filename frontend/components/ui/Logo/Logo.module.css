@@ -1,0 +1,5 @@
+.Logo {
+  path:first-child {
+    fill: white;
+  }
+}

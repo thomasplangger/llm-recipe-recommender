@@ -1,0 +1,46 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+fe/node_modules
+GPTWebserver/node_modules
+fe/.pnp
+fe/.pnp.js
+
+# testing
+fe/coverage
+
+# next.js
+fe/.next/
+fe/out/
+
+# production
+fe/build
+
+# misc
+fe/.DS_Store
+fe/*.pem
+
+# debug
+fe/npm-debug.log*
+fe/yarn-debug.log*
+fe/yarn-error.log*
+
+# local env files
+fe/.env*.local
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env.local
+frontend/.env.*
+be/.env
+be/.env.*
+!.env.example
+!**/.env.example
+
+# vercel
+fe/.vercel
+
+# typescript
+fe/*.tsbuildinfo
+fe/next-env.d.ts

@@ -1,0 +1,11 @@
+@import "./font.css"; /* Include this line to import your font styles */
+@import "./preflight.css";
+
+html {
+  font-size: 62.5% !important;
+  font-family: "Inter";
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
